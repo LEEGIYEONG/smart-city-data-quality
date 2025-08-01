@@ -7,11 +7,11 @@
 ![ClickHouse](https://img.shields.io/badge/ClickHouse-OLAP-red)
 ![Grafana](https://img.shields.io/badge/Grafana-Dashboard-blue)
 
-## 📋 프로젝트 개요
+## 프로젝트 개요
 
 본 프로젝트는 스마트시티의 다양한 센서로부터 수집되는 데이터의 품질을 실시간으로 모니터링하는 시스템입니다. **Stream DaQ 프레임워크**의 개념을 적용하여, 시간적 컨텍스트를 고려한 데이터 품질 평가 및 알림 기능을 제공합니다.
 
-### 🎯 주요 특징
+### 프로젝트 특징
 
 - **실시간 데이터 품질 평가**: 5분 시간 윈도우 기반 품질 메트릭 계산
 - **Stream DaQ 적용**: 2025년 최신 연구 기반 스트리밍 데이터 품질 모니터링
@@ -20,7 +20,7 @@
 - **실시간 대시보드**: Grafana 기반 실시간 모니터링
 - **확장 가능한 아키텍처**: 마이크로서비스 기반 설계
 
-## 🏗️ 아키텍처
+##  아키텍처
 
 ```
 ┌─────────────────┐    ┌──────────────┐    ┌─────────────────┐
@@ -39,7 +39,7 @@
                        └──────────────┘
 ```
 
-## 🛠️ 기술 스택
+##  기술 스택
 
 - **데이터 수집**: Apache Kafka, Schema Registry
 - **실시간 처리**: Python (Kafka Consumer), Apache Spark Streaming
@@ -48,7 +48,7 @@
 - **알림 시스템**: Slack API
 - **컨테이너화**: Docker, Docker Compose
 
-## 📊 데이터 품질 메트릭
+##  데이터 품질 메트릭
 
 ### 1. 완전성 (Completeness)
 - **측정**: 5분 윈도우 내 결측값 비율
@@ -71,7 +71,7 @@
 - **온도 변화율**: 연속 측정 간 10°C 이상 변화 감지
 - **임계값**: 80% 이상 일관성
 
-## 🚀 설치 및 실행
+##  설치 및 실행
 
 ### 사전 요구사항
 
@@ -148,7 +148,7 @@ python src/main.py
 - **ClickHouse**: localhost:9000
   - 데이터베이스 직접 쿼리 가능
 
-## 📈 실시간 모니터링 기능
+##  실시간 모니터링 기능
 
 ### 1. 실시간 메트릭 대시보드
 - 센서별 품질 점수 실시간 표시
@@ -166,7 +166,7 @@ python src/main.py
 - 센서 고장 자동 감지
 - 복구 상태 실시간 알림
 
-## 🔧 고급 기능
+##  고급 기능
 
 ### 1. 동적 임계값 조정
 ```python
@@ -196,7 +196,7 @@ dynamic_thresholds = {
 - **가용성**: 99.9% 업타임 목표
 - **확장성**: 수평적 확장 지원
 
-## 🐛 문제 해결
+##  문제 해결
 
 ### 일반적인 문제
 
@@ -231,7 +231,7 @@ tail -f quality_processor.log
 docker-compose logs -f
 ```
 
-## 🤝 기여하기
+##  기여하기
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -243,7 +243,7 @@ docker-compose logs -f
 
 이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
-## 🙏 참고 자료
+##  참고 자료
 
 - [Stream DaQ: Stream-First Data Quality Monitoring](https://arxiv.org/html/2506.06147v1/)
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
