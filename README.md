@@ -134,7 +134,7 @@ python src/data_producer/producer.py
 python src/main.py
 ```
 
-## 📊 모니터링 대시보드
+##  모니터링 대시보드
 
 시스템 실행 후 다음 URL에서 모니터링 가능:
 
@@ -189,7 +189,7 @@ dynamic_thresholds = {
 - 센서 고장 예측
 - 유지보수 일정 최적화
 
-## 📊 성능 지표
+##  성능 지표
 
 - **처리량**: 초당 1,000+ 메시지 처리
 - **지연시간**: 평균 100ms 이하
