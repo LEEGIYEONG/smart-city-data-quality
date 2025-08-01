@@ -245,7 +245,7 @@ docker-compose logs -f
 
 ## 🙏 참고 자료
 
-- [Stream DaQ: Stream-First Data Quality Monitoring]([https://example.com/stream-daq](https://arxiv.org/html/2506.06147v1))
+- [Stream DaQ: Stream-First Data Quality Monitoring](https://arxiv.org/html/2506.06147v1/)
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
 - [ClickHouse Documentation](https://clickhouse.com/docs/)
 - [Grafana Documentation](https://grafana.com/docs/)
